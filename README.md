@@ -61,7 +61,7 @@ Contributions to improve Sref Portal are welcome. Please follow these steps:
 Distributed under the MIT License. See `LICENSE` file for more information.
 
 ## Contact
-Your Name - your.email@example.com
+Your Name - nuperry2011@gmail.com
 
 Project Link: [https://github.com/yourusername/sref-portal](https://github.com/yourusername/sref-portal)
 
