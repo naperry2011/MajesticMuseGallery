@@ -108,7 +108,7 @@ main {
     font-family: 'Cormorant Garamond', serif;
 }
 
-#featured-srefs, #sref-index {
+#featured-srefs, #sref-index, #sref-range {
     margin-bottom: 4rem;
 }
 
@@ -160,7 +160,7 @@ h2::after {
 
 .sref-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
     padding: 1rem 0;
 }
@@ -206,46 +206,6 @@ h2::after {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 5px;
-}
-
-.index-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.index-buttons button {
-    padding: 0.7rem 1.5rem;
-    background: none;
-    border: 2px solid var(--accent-color);
-    color: var(--accent-color);
-    cursor: pointer;
-    font-family: 'Cinzel', serif;
-    font-size: 1rem;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.index-buttons button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent-color);
-    transition: all 0.3s;
-    z-index: -1;
-}
-
-.index-buttons button:hover::before, .index-buttons button.active::before {
-    left: 0;
-}
-
-.index-buttons button:hover, .index-buttons button.active {
-    color: var(--white);
 }
 
 .index-description {
@@ -294,10 +254,10 @@ footer {
 
 @media (max-width: 768px) {
     .sref-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
     
     .index-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
