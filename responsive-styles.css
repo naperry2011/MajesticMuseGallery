@@ -1,0 +1,290 @@
+/* Base styles */
+:root {
+    --main-bg-color: #D2D4C8;
+    --accent-color: #8B2635;
+    --text-color: #333;
+    --white: #fff;
+    --gold: #D4AF37;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 5%;
+}
+
+#hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 4rem 0;
+    background: linear-gradient(rgba(210, 212, 200, 0.8), rgba(210, 212, 200, 0.8)), url('https://example.com/abstract-art-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#hero p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--text-color);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 0;
+    transition: all 0.3s;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: 1px solid var(--accent-color);
+    margin: 0.5rem;
+}
+
+/* Gallery styles */
+.sref-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.sref-item {
+    text-align: center;
+    transition: transform 0.3s;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sref-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+}
+
+/* Index styles */
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.index-item {
+    display: block;
+    padding: 0.8rem;
+    border: 1px solid var(--accent-color);
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    background-image: linear-gradient(45deg, var(--accent-color) 50%, transparent 50%);
+    background-size: 200% 200%;
+    background-position: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .sref-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .index-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .sref-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .index-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ... (previous styles remain the same) ... */
+
+/* Index styles */
+.index-content {
+    text-align: center; /* Center the description text */
+}
+
+.index-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    gap: 1rem;
+    max-width: 800px; /* Limit the maximum width to prevent stretching on large screens */
+    margin: 0 auto; /* Center the grid itself */
+}
+
+.index-item {
+    flex: 0 1 calc(25% - 1rem); /* Set a flexible width with a maximum of 4 items per row */
+    min-width: 120px; /* Minimum width for each item */
+    padding: 0.8rem;
+    border: 1px solid var(--accent-color);
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    background-image: linear-gradient(45deg, var(--accent-color) 50%, transparent 50%);
+    background-size: 200% 200%;
+    background-position: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .index-item {
+        flex: 0 1 calc(33.333% - 1rem); /* 3 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .index-grid {
+        justify-content: space-around; /* Spread items evenly on very small screens */
+    }
+    
+    .index-item {
+        flex: 0 1 calc(50% - 1rem); /* 2 items per row on small screens */
+    }
+}
+
+/* ... (previous styles remain the same) ... */
+
+/* Index styles */
+.index-content {
+    text-align: center;
+}
+
+.index-description {
+    font-size: 1.2rem; /* Increased from the default size */
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    font-style: italic;
+    max-width: 800px; /* Limit the width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ... (rest of the styles remain the same) ... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .index-description {
+        font-size: 1.1rem; /* Slightly smaller on medium screens */
+    }
+    
+    /* ... (other media query styles remain the same) ... */
+}
+
+@media (max-width: 480px) {
+    .index-description {
+        font-size: 1rem; /* Further reduced size on very small screens */
+    }
+    
+    /* ... (other media query styles remain the same) ... */
+}
