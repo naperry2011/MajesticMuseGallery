@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Your sref data
     const srefData = [
-        { id: '6002', image: '/img/sref1.png', title: 'Artwork Title 1' },
-        { id: '6045', image: '/img/sref2.png', title: 'Artwork Title 2' },
-        { id: '6074', image: '/img/sref10.png', title: 'Artwork Title 3' },
-        { id: '6078', image: '/img/sref11.png', title: 'Artwork Title 4' },
-        { id: '6098', image: '/img/sref5.png', title: 'Artwork Title 5' },
-        { id: '5258', image: '/img/sref6.png', title: 'Artwork Title 6' },
-        { id: '5258', image: '/img/sref7.png', title: 'Artwork Title 6' },
-        { id: '5258', image: '/img/sref8.png', title: 'Artwork Title 6' },
-        { id: '5258', image: '/img/sref9.png', title: 'Artwork Title 6' },
-        { id: '5258', image: '/img/sref12.png', title: 'Artwork Title 6' },
+        { id: '610458393', image: '/img/pic1.png', title: 'Lost in Thought' },
+        { id: '1977305493', image: '/img/pic2.png', title: 'Beauty in thought' },
+        { id: '2555281841', image: '/img/pic5.png', title: 'Jazz' },
+        { id: '3010087591', image: '/img/pic11.png', title: 'Black Beauty' },
+        { id: '865500053', image: '/img/pic12.png', title: 'Stars is the limit' },
+        { id: '76', image: '/img/pic13.png', title: 'Fashion Model' },
+        { id: '930242007', image: '/img/pic10.png', title: 'Confused' },
+        { id: '3128439279', image: '/img/pic9.png', title: 'Wolf' },
+        { id: '2254099361', image: '/img/pic6.png', title: 'Evil Twins' },
+        { id: '1977305493', image: '/img/pic7.png', title: 'Sadness' },
+        { id: '2732593321', image: '/img/pic14.png', title: 'Red Light District' },
         // Add more artwork entries as needed
     ];
 
